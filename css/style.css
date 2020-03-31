@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;;
+}
+
+h1, h2, h3, h4 {
+    margin-top: 0;
+    font-family: 'Cairo', sans-serif;;
+}
+
+.alerts svg {
+    width: 30px;
+    height: 30px;
+}
+
+nav svg {
+    width: 90px;
+    height: 90px;
+}
+
+nav a {
+    display: inline-block;
+}
