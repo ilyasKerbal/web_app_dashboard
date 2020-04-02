@@ -44,6 +44,8 @@ nav a {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     grid-template-areas: "header" "navbar" "main" "footer";
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 header {
@@ -173,7 +175,7 @@ section h3 {
 section.traffic {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr minmax(300px, 4fr);
+    grid-template-rows: 1fr minmax(200px, 4fr);
     width: 100%;
 }
 
@@ -204,6 +206,11 @@ section.traffic {
 }
 
 .social-stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-container {
     display: flex;
     flex-direction: column;
 }
@@ -349,6 +356,8 @@ input[type=text], textarea, select {
     color: white;
     margin-top: 1rem;
     border-radius: 5px;
+    outline: none;
+    border: none;
 }
 
 .button-disabled {
@@ -358,7 +367,8 @@ input[type=text], textarea, select {
     margin-top: 1rem;
     background-color: #aca9b5;
     border-radius: 5px;
-
+    outline: none;
+    border: none;
 }
 
 button + button {
@@ -387,7 +397,6 @@ button + button {
 .switch-light.switch-ios * {
     outline: none;
 }
-
 
 footer {
     grid-area: footer;
@@ -425,6 +434,12 @@ footer {
 
     .social-stats {
         grid-column: 1 / span 2;
+    }
+
+    .social-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .alert {
@@ -482,5 +497,12 @@ footer {
 
     .traffic .traffic-nav {
         justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        max-width: 1024px;
+        margin: 0 auto;
     }
 }
