@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/toggle-switch.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Simple Dashboard</title>
 </head>
 <body class="main-container">
@@ -88,7 +89,6 @@
             </div>
         </section>
 
-
         <section class="daily">
             <h3>Daily Traffic</h3>
             <div class="widget-container-half">
@@ -96,7 +96,7 @@
             </div>
         </section>
 
-        <section class="mobile-users bottom-border">
+        <section class="mobile-users">
             <h3>Mobile Users</h3>
             <div class="widget-container-half">
                 <canvas id="mobile-users"></canvas>
@@ -231,6 +231,25 @@
         <section class="settings">
             <h3>Settings</h3>
             <!-- custom CSS toggle code -->
+            <label class="switch-light switch-ios" onclick="">
+                <input id="send-notifications" type="checkbox">
+                <strong>Enable mobile notifications</strong>
+                <span>
+                    <span>Off</span>
+                    <span>On</span>
+                    <a></a>
+                </span>
+            </label>
+
+            <label class="switch-light switch-ios" onclick="">
+                <input id="send-emails" type="checkbox">
+                <strong>Send email notifications</strong>
+                <span>
+                    <span>Off</span>
+                    <span>On</span>
+                    <a></a>
+                </span>
+            </label>
             <!-- custom CSS toggle code -->
             <select name="timezone" class="form-field" id="timezone">
                 <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
