@@ -273,6 +273,7 @@ section.traffic {
     align-items: center;
     border-bottom: 1px #797979 solid;
     padding: .6rem 1rem;
+    min-height: 9rem;
 }
 
 .member-item p:last-child {
@@ -311,6 +312,7 @@ section.traffic {
     align-items: center;
     border-bottom: 1px #797979 solid;
     padding: .6rem 1rem;
+    min-height: 9rem;
 }
 
 .activity-item img {
