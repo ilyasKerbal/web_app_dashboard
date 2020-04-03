@@ -45,4 +45,13 @@
         }]
     });
 
+    $('#message-form').submit(function(evt){
+        evt.preventDefault();
+        if($('#userField').val() === "" || $('#messageField').val() === ""){
+            alert("You must enter a user and a message");
+        }else {
+            alert("Form Submitted!")
+        }
+    });
+
 })();
